@@ -1,0 +1,69 @@
+{
+  "wordmark": "WECONQ",
+  "profile": {
+    "headline": "做网站和微信小程序",
+    "intro": [
+      "做个人主页、报名页，也能给已有项目接接口、加功能。",
+      "接开发兼职，也想找人一起做火柴人动画、剪短片。"
+    ]
+  },
+  "collaboration": {
+    "availability": "可远程，邯郸可见面。",
+    "searchLinks": [
+      {
+        "platform": "抖音",
+        "value": "AlanBeckeryyds",
+        "action": "复制抖音号"
+      },
+      {
+        "platform": "微信视频号",
+        "value": "柴学映画局",
+        "action": "复制搜索名"
+      }
+    ]
+  },
+  "contact": {
+    "wechat": {
+      "label": "微信",
+      "value": "15610853825",
+      "note": "好友申请请简单说明来意，谢谢。"
+    },
+    "qq": "2702696936"
+  },
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "value": "wzyhn",
+      "href": "https://github.com/wzyhn"
+    },
+    {
+      "label": "B 站",
+      "value": "柴学映画橘",
+      "href": "https://space.bilibili.com/409809582/"
+    },
+    {
+      "label": "B 站",
+      "value": "追梦赤子心-WZ",
+      "href": "https://space.bilibili.com/404429160/"
+    }
+  ],
+  "meta": {
+    "siteUrl": "https://weconq.com",
+    "title": "WECONQ · 网站和微信小程序",
+    "description": "做网站和微信小程序，接开发兼职，也欢迎一起做火柴人动画或剪短片。",
+    "locale": "zh_CN",
+    "keywords": [
+      "WECONQ",
+      "开发兼职",
+      "网站",
+      "微信小程序",
+      "动画"
+    ]
+  },
+  "footer": {
+    "icp": {
+      "label": "冀ICP备2025134033号-11",
+      "href": "https://beian.miit.gov.cn/"
+    }
+  }
+}

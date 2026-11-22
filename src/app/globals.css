@@ -1,0 +1,165 @@
+:root {
+  color-scheme: dark;
+  --paper: #000;
+  --ink: #fff;
+  --muted: #bdbdbd;
+  --td-brand-color: #fff;
+  --td-brand-color-hover: #e5e5e5;
+  --td-brand-color-active: #d0d0d0;
+  --td-brand-color-focus: #333;
+  --td-brand-color-disabled: #777;
+  --td-brand-color-light: #202020;
+  --td-brand-color-light-hover: #262626;
+  --td-bg-color-page: var(--paper);
+  --td-bg-color-container: #121212;
+  --td-text-color-primary: var(--ink);
+  --td-text-color-secondary: var(--muted);
+  --td-text-color-anti: var(--paper);
+  --td-component-border: #555;
+  --accent: var(--td-brand-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.shell {
+  width: min(28rem, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.page {
+  padding-block: clamp(3rem, 15vh, 10rem) 3rem;
+}
+
+.page h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.65rem, 5vw, 2.1rem);
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.intro p,
+.contact p {
+  margin: 0;
+}
+
+.intro p + p {
+  margin-top: 0.3rem;
+}
+
+.availability,
+.contact-note,
+.site-footer {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.contact,
+.accounts {
+  margin-block-start: 1.6rem;
+}
+
+.contact-line,
+.account-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.65rem;
+}
+
+.contact-value,
+.account-value {
+  user-select: text;
+  overflow-wrap: anywhere;
+}
+
+.contact-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.accounts {
+  margin-block-end: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accounts li {
+  min-height: 2.1rem;
+  align-content: center;
+}
+
+.page .t-link,
+.site-footer .t-link,
+.copy-button.t-button {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+  font-size: inherit;
+}
+
+.page .t-link:hover,
+.site-footer .t-link:hover,
+.copy-button.t-button:hover {
+  color: var(--ink);
+  text-decoration-thickness: 2px;
+}
+
+.copy-button.t-button,
+.copy-button.t-button:hover,
+.copy-button.t-button:active,
+.copy-button.t-button:focus {
+  min-width: 0;
+  min-height: 1.75rem;
+  height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 0.875rem;
+}
+
+.copy-feedback {
+  display: block;
+  font-size: 0.875rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.site-footer {
+  margin-block-start: auto;
+  padding: 1rem 1.5rem 1.5rem;
+  text-align: center;
+}

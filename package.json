@@ -1,0 +1,25 @@
+{
+  "name": "weconq-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "typecheck": "next typegen && tsc --noEmit",
+    "verify:export": "node scripts/check-static-export.mjs",
+    "write:release-manifest": "node scripts/write-release-manifest.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tdesign-react": "1.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "typescript": "5.9.3"
+  }
+}
