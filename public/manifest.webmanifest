@@ -1,7 +1,7 @@
 {
   "name": "WECONQ",
   "short_name": "WECONQ",
-  "description": "网站、微信小程序、开发兼职和短片合作。",
+  "description": "学 AI 编程、做网站和小程序，也聊剪辑、图片和动画。AI 编程入门对大学生完全免费。",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
