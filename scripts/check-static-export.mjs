@@ -35,8 +35,8 @@ for (const required of ["404.html", "robots.txt", "sitemap.xml", "og-image.png",
   assert.ok(existsSync(path.join(outputRoot, required)), `Missing exported file: ${required}`);
 }
 
-assert.match(html, /<link rel="canonical" href="https:\/\/weconq\.com\/"/);
-assert.match(html, /property="og:image" content="https:\/\/weconq\.com\/og-image\.png"/);
+assert.match(html, /<link rel="canonical" href="https:\/\/wequer\.cn\/"/);
+assert.match(html, /property="og:image" content="https:\/\/wequer\.cn\/og-image\.png"/);
 assert.match(html, /name="twitter:card" content="summary_large_image"/);
 
 for (const component of ["t-button", "t-link"]) {
@@ -67,7 +67,7 @@ assert.match(readFileSync(path.join(outputRoot, "404.html"), "utf8"), /页面不
 
 const robots = readFileSync(path.join(outputRoot, "robots.txt"), "utf8");
 const sitemap = readFileSync(path.join(outputRoot, "sitemap.xml"), "utf8");
-assert.match(robots, /Sitemap: https:\/\/weconq\.com\/sitemap\.xml/);
-assert.match(sitemap, /<loc>https:\/\/weconq\.com\/<\/loc>/);
+assert.match(robots, /Sitemap: https:\/\/wequer\.cn\/sitemap\.xml/);
+assert.match(sitemap, /<loc>https:\/\/wequer\.cn\/<\/loc>/);
 
 console.log(`Static export verified: ${references.length} references, ${pageIds.size} anchors.`);
