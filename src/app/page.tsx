@@ -8,27 +8,10 @@ export default function HomePage() {
 
   return (
     <div className="shell">
-      <header className="masthead">
-        <span className="wordmark">{site.wordmark}</span>
-        <nav aria-label="页面导航">
-          <a href="#contact">联系方式</a>
-          <a href="#links">社交账号</a>
-        </nav>
-      </header>
-
-      <main id="main-content" className="spread">
-        <div className="introduction">
-          <h1>{profile.headline.map(line => <span key={line}>{line}</span>)}</h1>
-          <p className="intro">{profile.intro}</p>
-        </div>
-        <section className="directions" id="work" aria-label="可以一起做的事">
-          {collaboration.directions.map(({ title, description, note }) => (
-            <section className="direction" key={title}>
-              <h2>{title}</h2>
-              <p>{description}</p>
-              {note && <p className="free-note">{note}</p>}
-            </section>
-          ))}
+      <main id="main-content">
+        <section className="letter" id="work" aria-labelledby="intro-title">
+          <h1 id="intro-title">{profile.headline}</h1>
+          {profile.paragraphs.map(line => <p key={line}>{line}</p>)}
         </section>
 
         <section className="contact" id="contact" aria-label="联系方式">

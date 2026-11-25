@@ -1,7 +1,7 @@
 {
-  "name": "WECONQ",
-  "short_name": "WECONQ",
-  "description": "学 AI 编程、做网站和小程序，也聊剪辑、图片和动画。AI 编程入门对大学生完全免费。",
+  "name": "开发、剪辑和 AI 编程",
+  "short_name": "个人主页",
+  "description": "我还在上大学，接网站、小程序、剪辑和做图的活。大学生想学 AI 编程，我免费教。",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

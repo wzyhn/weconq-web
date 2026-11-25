@@ -36,8 +36,8 @@ for (const required of ["404.html", "robots.txt", "sitemap.xml", "og-image.png",
 }
 
 assert.match(html, /<link rel="canonical" href="https:\/\/wequer\.cn\/"/);
-assert.match(html, /property="og:image" content="https:\/\/wequer\.cn\/og-image\.png"/);
-assert.match(html, /name="twitter:card" content="summary_large_image"/);
+assert.ok(html.includes(`property="og:title" content="${site.meta.title}"`));
+assert.match(html, /name="twitter:card" content="summary"/);
 
 for (const component of ["t-button", "t-link"]) {
   assert.ok(html.includes(component), `Missing official TDesign component: ${component}`);
@@ -54,6 +54,9 @@ for (const { href } of site.socialLinks) {
   assert.ok(references.includes(href), `Missing public account: ${href}`);
 }
 assert.doesNotMatch(html, /href="tel:|现在在天津|真正做出来的东西/);
+for (const line of [site.profile.headline, ...site.profile.paragraphs]) {
+  assert.ok(html.includes(line), "Missing homepage copy");
+}
 assert.match(html, /复制微信号/);
 assert.match(html, /复制 QQ 号/);
 assert.ok(html.includes(site.contact.qq));

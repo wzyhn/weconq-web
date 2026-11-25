@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.meta.siteUrl),
   title: site.meta.title,
   description: site.meta.description,
-  applicationName: site.wordmark,
+  applicationName: site.meta.title,
   alternates: { canonical: "/" },
   keywords: site.meta.keywords,
   formatDetection: { email: false, address: false, telephone: false },
@@ -19,17 +19,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: site.meta.locale,
-    siteName: site.wordmark,
+    siteName: site.meta.title,
     title: site.meta.title,
     description: site.meta.description,
     url: `${site.meta.siteUrl}/`,
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: site.meta.title }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: site.meta.title,
     description: site.meta.description,
-    images: ["/og-image.png"],
   },
 };
 
